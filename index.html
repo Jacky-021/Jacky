@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jacky Electronic – Electronics &amp; Repair Centre, Gaya</title>
+<meta name="description" content="Coolers, fans, induction cookers, mixers, irons, wiring material and repairs in Gaya.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#home"><img src="images/logo-mark.png" alt="" width="44" height="44"><span>Jacky Electronic</span></a>
+  <nav aria-label="Main">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#track">Track repair</a>
+    <a href="#map">Map</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<!-- 1. HOME -->
+<div class="hero-band">
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1>Jacky Electronic</h1>
+    <p class="lead">जैकी इलेक्ट्रॉनिक्स – buy it, fix it, or wire it, all from one counter in Gaya.</p>
+    <p>We sell coolers, fans, induction cookers, mixers, irons and wiring material, and repair TVs, ACs, laptops, mobiles and more. Grand opening offer: free diagnosis and 10% off your first repair.</p>
+    <a class="btn" href="#services">Get Started</a>
+    <a class="btn ghost" href="#track">Track my repair</a>
+    <dl class="hero-stats">
+      <div><dt>Repair bookings this week</dt><dd>28</dd></div>
+      <div><dt>Repairs in progress</dt><dd>14</dd></div>
+    </dl>
+  </div>
+  <img class="hero-logo" src="images/logo.png" alt="Jacky Electronic logo: the letters JE inside a ring of cyan and red lines" width="822" height="684">
+</section>
+</div>
+
+<!-- 2. ABOUT -->
+<section id="about">
+  <h2>About the business</h2>
+  <div class="grid4">
+    <article><h3>What we do</h3><p>Sell electronics and home appliances, supply wiring material, and repair TVs, ACs, refrigerators, washing machines, laptops and mobiles.</p></article>
+    <article><h3>Who we serve</h3><p>Households, students, small shops, offices and electricians who buy wiring material in bulk.</p></article>
+    <article><h3>Service area</h3><p>Gaya city and the Bhusunda, Gaya–Fatehpur Road area. Choose a home visit or drop the device at our centre.</p></article>
+    <article><h3>Why this shop?</h3><p>Free diagnosis, an estimate before any repair, and a 90-day service warranty on eligible repairs.</p></article>
+  </div>
+</section>
+
+<!-- 3. SERVICES -->
+<section id="services" class="alt">
+  <h2>Products &amp; services</h2>
+  <ul class="tiles" aria-label="What we sell">
+    <li><img src="images/products/cooler.svg" alt="Room cooler" width="200" height="160" loading="lazy"><span>Coolers</span></li>
+    <li><img src="images/products/fan.svg" alt="Ceiling fan" width="200" height="160" loading="lazy"><span>Fans</span></li>
+    <li><img src="images/products/induction.svg" alt="Induction cooktop" width="200" height="160" loading="lazy"><span>Induction cookers</span></li>
+    <li><img src="images/products/mixer.svg" alt="Mixer grinder" width="200" height="160" loading="lazy"><span>Mixers and juicers</span></li>
+    <li><img src="images/products/iron.svg" alt="Electric iron" width="200" height="160" loading="lazy"><span>Irons</span></li>
+    <li><img src="images/products/wiring.svg" alt="Coil of electrical wire" width="200" height="160" loading="lazy"><span>Wiring material</span></li>
+  </ul>
+  <p class="note">Prices are indicative ranges. Ask for an exact quote on <a href="#contact">the enquiry form</a>.</p>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Item / Service</th><th>Price</th></tr></thead>
+    <tbody>
+      <tr><td>Table and ceiling fan</td><td>₹1,200 – 1,500</td></tr>
+      <tr><td>LED lights and tubes</td><td>₹40 – 250</td></tr>
+      <tr><td>Cooler</td><td>₹4,000 – 10,000</td></tr>
+      <tr><td>Iron and sandwich maker</td><td>₹400 – 1,000</td></tr>
+      <tr><td>Mixer and juicer</td><td>₹1,000 – 3,000</td></tr>
+      <tr><td>Wiring material</td><td>₹10,000 – 1,00,000</td></tr>
+      <tr><td>Small electrical equipment</td><td>₹10 – 500</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <h3 class="sub">Repair services</h3>
+  <ul class="chips">
+    <li>TV</li><li>AC and cooling</li><li>Refrigerator</li><li>Washing machine</li><li>Laptop and computer</li><li>Mobile</li>
+  </ul>
+  <p class="note">Diagnosis is free. You get a written estimate before we start. <a href="#contact">Book a repair</a>.</p>
+</section>
+
+<!-- 4. DASHBOARD -->
+<section id="dashboard">
+  <h2>Manager dashboard</h2>
+  <p class="note">What the manager needs to know first thing in the morning. Figures shown are sample data. Choose a period:</p>
+  <label class="sel">Period
+    <select id="period">
+      <option value="week">This week</option>
+      <option value="month" selected>This month</option>
+      <option value="year">This year</option>
+    </select>
+  </label>
+  <div class="kpis" id="kpis"></div>
+  <div class="dash-row">
+    <figure>
+      <figcaption>Orders received vs dispatched (last 6 months)</figcaption>
+      <svg id="chart" viewBox="0 0 560 280" role="img" aria-label="Bar chart of orders received and dispatched per month"></svg>
+    </figure>
+    <div class="stockout">
+      <h3>Stock-out items – reorder now</h3>
+      <ul id="stockout"></ul>
+      <p class="note">Reorder these first. Asked about a product? <a href="#contact">Send an enquiry</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 5. TRACK REPAIR (interactive feature) -->
+<section id="track" class="alt">
+  <h2>Track your repair</h2>
+  <p class="note">Enter the ticket number from your repair slip. Try EF-1024, EF-1025, EF-1026 or EF-1027.</p>
+  <form id="trackForm" class="inline">
+    <label for="orderId">Ticket number</label>
+    <input id="orderId" name="orderId" placeholder="EF-1024" autocomplete="off" required>
+    <button class="btn" type="submit">Check status</button>
+  </form>
+  <div id="trackResult" role="status" aria-live="polite"></div>
+</section>
+
+<!-- 6. CONTACT -->
+<section id="contact">
+  <h2>Contact &amp; enquiry</h2>
+  <div class="contact-grid">
+    <address>
+      <p><strong>Phone</strong><br><a href="tel:+917488991657">74889 91657</a></p>
+      <p><strong>WhatsApp</strong><br><a href="https://wa.me/917488991657" target="_blank" rel="noopener">Chat for a quick quote</a></p>
+      <p><strong>Email</strong><br><a href="mailto:jaikee021@gmail.com">jaikee021@gmail.com</a></p>
+      <p><strong>Location</strong><br>Bhusunda, Gaya–Fatehpur Road, directly opposite Khatangi Kothi, Gaya<br><a href="https://www.google.com/maps/search/?api=1&amp;query=Khatangi+Kothi+Bhusunda+Gaya+Fatehpur+Road" target="_blank" rel="noopener">Open in Google Maps</a></p>
+      <p><strong>Hours</strong><br>Monday to Sunday, 9 am – 8 pm</p>
+      <p><strong>Safety standards</strong><br><a href="https://www.bis.gov.in" target="_blank" rel="noopener">Check ISI/BIS marks before you buy</a></p>
+    </address>
+    <form id="enquiryForm">
+      <label for="name">Your name</label>
+      <input id="name" required>
+      <label for="phone">Phone number</label>
+      <input id="phone" type="tel" pattern="[0-9+ ]{10,14}" required>
+      <label for="topic">I need help with</label>
+      <select id="topic">
+        <option>Buy an appliance</option><option>Repair – home visit</option><option>Repair – drop at centre</option><option>Wiring material quote</option><option>Other</option>
+      </select>
+      <label for="msg">Message</label>
+      <textarea id="msg" rows="4"></textarea>
+      <button class="btn" type="submit">Send enquiry</button>
+      <p id="formMsg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+  <div class="map" id="map">
+    <h3>Find us on the map</h3>
+    <iframe title="Map showing Jacky Electronic near Khatangi Kothi, Bhusunda, Gaya" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=Khatangi+Kothi+Bhusunda+Gaya+Fatehpur+Road&amp;output=embed"></iframe>
+    <p class="note">Map not loading? <a href="https://www.google.com/maps/search/?api=1&amp;query=Khatangi+Kothi+Bhusunda+Gaya+Fatehpur+Road" target="_blank" rel="noopener">Open it in Google Maps</a>.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <img src="images/logo-mark.png" alt="" width="48" height="48">
+  <p>© <span id="year"></span> Jacky Electronic, Gaya. <a href="#home">Back to top</a></p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
